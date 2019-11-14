@@ -1,0 +1,303 @@
+@import url('normalize.css');
+
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text:100,300,400,500,600,700,800,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Big Shoulders Text', cursive;
+}
+
+body{
+    background: url('../assets/img/fundo.jpg') fixed;
+    color: rgb(97, 1, 1);
+}
+
+nav{
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.50);
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 0px -8px 15px black;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li{
+    display: inline;
+}
+
+nav a{
+    text-decoration: none;
+    color: rgb(226, 226, 226);    
+    padding: 10px 25px;
+    margin: 0 -1.5px;
+    font-weight: 800 ;
+    transition: 0.5s;
+    font-size: 1.2em;
+}
+
+nav a:hover{
+    background-color: rgba(255,255,255,0.8);
+    color: rgba(0, 0, 0, 0.9);
+}
+
+section.master{
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgba(255,255,255,0.9);
+    box-shadow: 0px -8px 15px black;
+    padding: 0 20px;
+}
+
+
+header{
+    text-align: center;
+    padding: 40px;
+    font-size: 1em;
+    line-height: 50px
+}
+
+header img.avatar{
+    border-radius: 25%;
+    margin: 40px 0;
+    background-color: rgba(0, 0, 0, 0.15);
+    padding: 8px;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+header hr{
+    margin: 0 auto;
+    width: 100%;
+}
+
+section.corpo{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-1{
+    flex: 1;
+}
+
+.flex-2{
+    flex: 2;
+}
+
+.flex-3{
+    flex: 3;
+}
+
+section.corpo div{
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+div img{
+    width: 100%;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+section.corpo div div{
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    transition: 0.5s;
+}
+
+section.corpo div div:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.25), 0 0 0.5em 0 #000000;
+}
+
+div.centro{
+    margin: 0 20px;
+}
+
+section.corpo div div h3{
+    margin-top: -5px;
+    text-align: center;
+    padding: 10px 0;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-top: none;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+hr{
+    margin: 0 auto;
+    width: 25%;
+}
+
+footer{
+    text-align: center;
+    font-size: 0.8em;
+    padding: 20px 0;
+}
+
+footer a{
+    color: rgb(97, 1, 1);
+    text-decoration: none;
+    font-style: italic;
+    transition: 0.3s;
+}
+
+footer a:hover{
+    color: rgba(71, 70, 70, 0.979);
+}
+
+/*pagina cliente*/
+
+section.cliente div.esquerda{
+    margin-right: 10px;    
+}
+
+section.cliente div.direita{
+    margin-left: 10px;    
+}
+
+section.master div h1{
+    font-size: 1.9em;
+    font-weight: 800;
+   
+    margin-bottom: 50px;
+}
+
+section.cliente img{
+    margin: 3px 0 10px 0;
+}
+
+section.cliente h3{
+    text-indent: 30px;
+    line-height: 25px;
+    font-weight: 800;
+    font-size: 1.2em;
+}
+
+/*página contato*/
+
+section.flex{
+    padding-bottom: 35px ;
+}
+
+div.contato-esquerda{
+    margin-right: 20px;
+}
+
+iframe{
+    margin: 10px 0;
+}
+
+.contato-esquerda ul{
+    list-style-type: none;
+}
+
+.contato-esquerda li{
+    padding-top: 3px;
+    font-size: 1em;
+}
+
+.contato-esquerda h4{
+    margin: 15px 0;
+}
+
+.contato form{
+    max-width: 500px;
+    margin: auto;
+}
+
+.contato h3{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.4em;
+}
+
+.contato label{
+    display: block;
+    margin-top: 3px;
+    font-size: 1em;
+}
+
+.contato input, .contato textarea{
+    display: block;
+    margin-bottom: 10px;
+    padding: 2px 5px;
+    width: 100%;
+    font-size: 1em;
+}
+
+.contato textarea{
+    max-width: 100px;
+    min-width: 100%;
+    min-height: 120px;
+    max-height: 300px;
+}
+
+.contato .botao{
+    width: 80px;
+    font-weight: bold;
+    font-size: 0.8em;
+    color: rgb(97, 1, 1);
+    cursor: pointer;
+    border: 1px solid rgb(168, 168, 168);
+    border-radius: 2px;
+}
+
+.contato .botao:hover{
+    background-color: rgb(233, 233, 233);
+}
+
+@media (max-width:600px){
+    section.corpo div{
+        flex: 100%;
+    }
+    div.centro{
+        margin: 0;
+    }
+    nav ul li{
+        display: block;
+        margin: 21px 0;
+    }
+    nav ul{
+        margin: -21px 0;
+    }
+
+    /* página Cliente*/
+
+    section.cliente div.esquerda{
+        margin-right: 0;
+    }
+
+    section.cliente div.direita{
+        margin-left: 0;
+    }
+
+    /* página contato */
+
+    section.flex div{
+        flex: 100%;
+    }
+
+    div.contato-esquerda{
+        margin-right: 0;
+    }
+
+    .contato h3{
+        margin-top: 35px;
+    }
+}
